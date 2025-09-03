@@ -1,0 +1,969 @@
+body {
+      margin: 0;
+      font-family: 'Times New Roman', Times, serif, sans-serif;
+      background-color: #0d1117;
+      color: #ffffff;
+    }
+
+    header {
+      background-color: #1f2937;
+      padding: 1,25rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      color: #fbff00;
+    }
+
+    .hero {
+      background: url('https://i.ibb.co/xKkjV60G/5233254540659259167.jpg') center/cover no-repeat;
+      padding: 6,25rem 1,25rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2em;
+      margin-bottom: 0,625rem;
+      color: #fff;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      color: #ddd;
+    }
+
+    .services {
+      padding: 2,5rem 1.25rem;
+      max-width: 56,25rem;
+      margin: auto;
+    }
+
+    .services h3 {
+      color: #20c997;
+      text-align: center;
+      margin-bottom: 1,875rem;
+    }
+
+    .services ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(15,625rem, 1fr));
+      gap: 1,25rem;
+    }
+
+    .services li {
+      background: #1f2937;
+      padding: 1,25rem;
+      border-radius: 0,625rem;
+      border: 0,0625rem solid #333;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .services li:hover {
+      background: #20c997;
+      color: #000;
+    }
+
+
+    .cta {
+      text-align: center;
+      margin: 2,5rem 0;
+    }
+
+    .cta button {
+      padding: 0,625rem 1.25rem;
+      background-color: #20c997;
+      border: none;
+      border-radius: 0,3125rem;
+      color: white;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    /* Модальное окно */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 100;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .modal-content {
+      background-color: #fff;
+      color: #000;
+      margin: 10% auto;
+      padding: 1.25rem;
+      border: 0,0625rem solid #888;
+      width: 90%;
+      max-width: 25rem;
+      border-radius: 0.5rem;
+      text-align: center;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 1.75rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: black;
+    }
+
+    footer {
+      background-color: #1f2937;
+      text-align: center;
+      padding: 1rem;
+      color: #ccc;
+    }
+
+    .about {
+  background-color: #161b22;
+  padding: 2.5rem 1.25rem;
+  color: #eee;
+  font-size: 1.1em;
+}
+
+.about .container {
+  max-width: 56.25rem;
+  margin: 0 auto;
+}
+
+.about h2 {
+  text-align: center;
+  color: #20c997;
+  margin-bottom: 1em;
+}
+
+.about-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1em;
+}
+
+.about-list li {
+  margin-bottom: 1em;
+}
+  .navbar {
+  margin-top: 1em;
+}
+
+.navbar a {
+  display: inline-block;
+  margin: 0 0.3em;
+  padding: 0.5em 1em;
+  color: #ffffff;
+  text-decoration: none;
+  border: 0.01em solid transparent;
+  border-radius: 0.3em;
+  transition: all 0.3s ease;
+  background-color: #1f2937;
+  font-size: 1.3em;
+}
+
+.navbar a:hover {
+  background-color: #20c997;
+  color: #000;
+}
+
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 25rem;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  width: 400%; /* 4 картинки */
+  height: 100%;
+  animation: slide 12s infinite ease-in-out;
+}
+
+.slide {
+  flex: 1 0 100%;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 0,0625rem 0,0625rem 0,1875rem #000;
+  z-index: 2;
+}
+
+/* Анимация плавной прокрутки */
+@keyframes slide {
+  0%   { transform: translateX(0%); }
+  20%  { transform: translateX(0%); }
+  25%  { transform: translateX(-100%); }
+  45%  { transform: translateX(-100%); }
+  50%  { transform: translateX(-200%); }
+  70%  { transform: translateX(-200%); }
+  75%  { transform: translateX(-300%); }
+  95%  { transform: translateX(-300%); }
+  100% { transform: translateX(0%); }
+}
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0,9375rem;
+  justify-content: center;
+  margin-top: 1,25rem;
+}
+
+.gallery img {
+  width: 15,625rem;
+  height: 11,25rem;
+  object-fit: cover;
+  border-radius: 0,625rem;
+  box-shadow: 0 0 0,625rem rgba(0,0,0,0.4);
+}
+
+@media (max-width: 48rem) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    margin: 0,5rem 0;
+    width: 90%;
+    text-align: center;
+  }
+
+  .hero-caption h2 {
+    font-size: 1.4em;
+  }
+
+  .hero-caption p {
+    font-size: 1em;
+  }
+
+  .about .container,
+  .services {
+    padding: 1,25rem 0,625rem;
+  }
+
+  .about-list li {
+    font-size: 0.95em;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery img {
+    width: 90%;
+    height: auto;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+
+  .services ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+.achievements {
+  padding: 2,5rem 1,25rem;
+  background-color: #161b22;
+  color: #eee;
+}
+
+.achievements h2 {
+  text-align: center;
+  color: #20c997;
+  margin-bottom: 1,25rem;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1,25rem;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 15,625rem;
+  height: auto;
+  cursor: pointer;
+  border-radius: 0,625rem;
+  box-shadow: 0 0 0,625rem rgba(0,0,0,0.4);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.pdf-thumbnail {
+  background-color: #1f2937;
+  padding: 1,25rem;
+  border-radius: 0,625rem;
+  border: 0,0625rem solid #333;
+  color: #eee;
+  text-align: center;
+  width: 15,625rem;
+  cursor: pointer;
+  box-shadow: 0 0 0,625rem rgba(0,0,0,0.4);
+  transition: background-color 0.3s;
+}
+
+.pdf-thumbnail:hover {
+  background-color: #20c997;
+  color: #000;
+}
+
+/* Модалка */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: 5% auto;
+  padding: 0,625rem;
+  max-width: 90%;
+  max-height: 85vh;
+  background-color: #fff;
+  color: #000;
+  border-radius: 0,625rem;
+  text-align: center;
+  overflow: auto;
+}
+
+.modal-content img, .modal-content iframe {
+  max-width: 100%;
+  max-height: 75vh;
+}
+
+.modal .close {
+  position: absolute;
+  top: 1,25rem;
+  right: 1,875rem;
+  color: #fff;
+  font-size: 2,5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 48rem) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pdf-thumbnail, .gallery img {
+    width: 90%;
+  }
+
+  .modal-content {
+    width: 95%;
+  }
+}
+
+.universal-slider {
+  position: relative;
+  width: 100%;
+  max-width: 75rem;
+  height: 18,75rem;
+  margin: 1,875rem auto;
+  overflow: hidden;
+  border-radius: 0,625rem;
+  background: #111; /* общий фон */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain; /* сохраняем пропорции */
+  padding: 0,625rem;
+  background: #fff; /* фон под логотип */
+  border-radius: 0,5rem;
+  box-shadow: 0 0 0,625rem rgba(0,0,0,0.5);
+}
+
+/* Адаптивность */
+@media (max-width: 48rem) {
+  .universal-slider {
+    height: 12,5rem;
+  }
+  .slide img {
+    max-width: 90%;
+    max-height: 90%;
+  }
+}
+
+.partners-slider {
+  overflow: hidden;
+  width: 100%;
+  background: #111;
+  padding: 1,25rem 0;
+}
+
+.partners-track {
+  display: flex;
+  gap: 20px;
+  animation: scrollLoop 30s linear infinite;
+}
+
+.partner {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 180px;
+  background: #fff;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 8px rgba(0,0,0,0.4);
+}
+
+.partner img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .partner {
+    width: 180px;
+    height: 130px;
+  }
+}
+
+@keyframes scrollLoop {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
+
+.contacts {
+  padding: 40px 20px;
+  background: #161b22;
+  color: #eee;
+}
+
+.contacts h2 {
+  text-align: center;
+  color: #20c997;
+  margin-bottom: 30px;
+}
+
+.contacts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.contact-info p, 
+.contact-info a {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.contact-info a {
+  color: #20c997;
+  text-decoration: none;
+}
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Форма */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background: #222;
+  color: #fff;
+}
+
+.contact-form button {
+  padding: 12px;
+  background: #20c997;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  color: #000;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #17a589;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .contacts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.order-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #20c997;
+  color: #000;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.order-btn:hover {
+  background: #17a589;
+  color: #fff;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 0 10px;
+}
+
+.section-title {
+  color: #20c997;
+  font-size: clamp(22px, 2.6vw, 32px);
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.section-link {
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform .2s ease, opacity .2s ease;
+}
+
+.section-link:hover { transform: translateY(-1px); opacity: .9; }
+
+.about-content {
+  color: #ddd;
+  line-height: 1.6;
+  max-width: 900px;
+}
+
+.testimonials {
+  padding: 30px 0 10px;
+}
+
+.testimonials-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 1024px) {
+  .testimonials-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 640px) {
+  .testimonials-grid { grid-template-columns: 1fr; }
+}
+
+.t-card {
+  background: #1f2937;
+  border: 1px solid #2a3443;
+  border-radius: 14px;
+  padding: 16px;
+  color: #e6e6e6;
+  box-shadow: 0 6px 18px rgba(0,0,0,.25);
+}
+
+.t-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.t-avatar {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: #20c997;
+  color: #000;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+}
+
+.t-name { font-weight: 700; }
+.t-meta { font-size: 12px; opacity: .75; }
+
+.t-stars {
+  color: #ffd166; /* звёзды */
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.t-text {
+  margin: 0;
+  color: #d7dde7;
+  line-height: 1.6;
+  position: relative;
+}
+.t-text::before {
+  content: "“";
+  color: #20c997;
+  font-size: 28px;
+  font-weight: 900;
+  margin-right: 6px;
+}
+
+/* Общие секции */
+.section-title {
+  color: #20c997;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: clamp(22px, 2.6vw, 32px);
+}
+
+/* Преимущества */
+.adv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.adv-card {
+  background: #1f2937;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0,0,0,.25);
+}
+
+.adv-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* Статистика */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  text-align: center;
+  gap: 20px;
+}
+
+.stat h3 {
+  color: #20c997;
+  font-size: 28px;
+  margin: 0;
+}
+
+.stat p {
+  margin: 5px 0 0;
+  color: #ccc;
+}
+
+/* Карточки услуг */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background: #1f2937;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0,0,0,.25);
+  
+}
+
+.service-icon {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 18px;
+  background: #20c997;
+  border-radius: 6px;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover { background: #17a589; color: #fff; }
+
+.trust-text h2 {
+  text-align: center;
+  font-size: clamp(20px, 2.4vw, 28px);
+  color: #20c997;
+  margin: 20px 0;
+  font-weight: 700;
+}
+
+.achievements-gallery {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 20px;
+}
+
+.ach-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  overflow: hidden;
+  text-align: center;
+}
+
+.ach-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column; /* ставим в колонку: сверху логотип+название, снизу меню */
+  align-items: center;    /* центрируем по горизонтали */
+  gap: 12px;
+}
+
+.logo-block {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* логотип и текст по центру */
+  gap: 12px;
+  text-align: center;
+}
+
+.logo-img {
+  height: 80px;
+  width: auto;
+}
+
+/* FAQ */
+.faq {
+  margin-top: 50px;
+}
+
+.faq-item {
+  margin-bottom: 16px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+}
+
+.faq-question {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+
+  background: #20c997;
+  color: #000;
+  padding: 18px 20px;
+  font-size: 20px; /* увеличили шрифт */
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.faq-question:hover {
+  background: #17a589;
+  color: #fff;
+}
+
+.question-text {
+  text-align: center;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  background: #1f2937;
+  color: #ddd;
+  padding: 0 20px;
+  transition: max-height 0.5s ease, padding 0.4s ease, opacity 0.5s ease;
+  opacity: 0; /* изначально скрыт */
+  text-align: center;
+  font-size: 18px; /* чуть крупнее ответы */
+}
+
+.faq-answer p {
+  margin: 16px 0;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 600px; /* можно увеличить если текста много */
+  padding: 16px 20px;
+  opacity: 1; /* проявляется плавно */
+}
+
+/* Иконка ❓ */
+.faq-question .icon {
+  font-size: 22px;
+}
+
+/* Стрелка */
+.arrow {
+  transition: transform 0.4s ease;
+  font-size: 22px;
+}
+
+.faq-item.active .arrow {
+  transform: rotate(90deg);
+}
+
+/* Галерея */
+.gallery {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.gallery-item {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* чтобы не растягивались */
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* Модалка */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  display: block;
+  margin: 5% auto;
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.vk {
+  width: 4em;
+  height: 4em;
+}
+
+.achievement {
+  text-align: center;
+  font-size: 1.4em;
+}
