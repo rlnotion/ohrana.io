@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Кобра</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="manifest" href="images/site.webmanifest" />
+  <script src="js/script.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="container header-container">
+      <div class="logo-block">
+        <img src="images/web-app-manifest-512x512.png" alt="Логотип Кобра" class="logo-img">
+        <h1>ОХРАННОЕ АГЕНТСТВО "КОБРА"</h1>
+        <img src="images/web-app-manifest-512x512.png" alt="Логотип Кобра" class="logo-img">
+      </div>
+      <nav class="navbar">
+        <a href="index.html">Главная</a>
+        <a href="services.html">Услуги</a>
+        <a href="about.html">О нас</a>
+        <a href="contact.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="partners-slider">
+    <div class="partners-track">
+      <div class="partner"><img src="" alt="Роснефть"></div>
+      <div class="partner"><img src="" alt="СШ Сахалин"></div>
+      <div class="partner"><img src="" alt="Машина"></div>
+      <div class="partner"><img src="images\цми.jpg" alt="Центр спорта"></div>
+      <div class="partner"><img src="images\f.png" alt="Партнёр"></div>
+      <div class="partner"><img src="images\Без названиясиско.png" alt="Фото офиса"></div>
+      <div class="partner"><img src="images\энерго.jpg" alt="Ещё партнёр"></div>
+      <div class="partner"><img src="images\Без названиящжо.jpg" alt="Ещё партнёр"></div>
+    </div>
+  </div>
+
+
+
+<section class="services reveal">
+  <div class="container">
+    <h2 class="section-title">Наши услуги</h2>
+    <div class="services-grid">
+      <div class="service-card" data-service="guard">
+        <div class="service-icon">👮</div>
+        <h3>Физическая охрана</h3>
+        <p>Охрана офисов, складов, ТЦ и других объектов.</p>
+        <button class="btn service">Подробнее</button>
+      </div>
+      <div class="service-card" data-service="cctv">
+        <div class="service-icon">🎥</div>
+        <h3>Видеонаблюдение</h3>
+        <p>Монтаж и обслуживание систем безопасности.</p>
+        <button class="btn service">Подробнее</button>
+      </div>
+      <div class="service-card" data-service="events">
+        <div class="service-icon">🎤</div>
+        <h3>Охрана мероприятий</h3>
+        <p>Безопасность концертов, спортивных и деловых событий.</p>
+        <button class="btn service">Подробнее</button>
+      </div>
+      <div class="service-card" data-service="alarm">
+        <div class="service-icon">🚨</div>
+        <h3>Пультовая охрана</h3>
+        <p>Круглосуточный мониторинг и группы реагирования.</p>
+        <button class="btn service">Подробнее</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Модальное окно -->
+  <div id="serviceModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="serviceTitle"></h2>
+      <p id="serviceDesc"></p>
+      <a href="contact.html" class="order-btn">Заказать</a>
+    </div>
+  </div>
+
+  <section class="faq reveal">
+    <div class="container">
+      <h2 class="section-title">Часто задаваемые вопросы</h2>
+      
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="icon">❓</span>
+          <span class="question-text">Сколько стоит охрана объекта?</span>
+          <span class="arrow">▶</span>
+        </button>
+        <div class="faq-answer">
+          <p>Стоимость зависит от размера объекта, количества постов и графика работы...</p>
+        </div>
+      </div>
+      
+  
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="icon">❓</span>
+          <span class="question-text">Можно ли заказать охрану на время мероприятия?</span>
+          <span class="arrow">▶</span>
+        </button>
+        <div class="faq-answer">
+          <p>Да, мы предоставляем услуги временной охраны для мероприятий любого масштаба: концертов, конференций, свадеб и спортивных событий.</p>
+        </div>
+      </div>
+  
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="icon">❓</span>
+          <span class="question-text">Сколько сотрудников работает в смене?</span>
+          <span class="arrow">▶</span>
+        </button>
+        <div class="faq-answer">
+          <p>Количество сотрудников определяется исходя из задачи клиента. Мы всегда обеспечиваем надёжную охрану силами достаточного количества специалистов.</p>
+        </div>
+      </div>
+  
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="icon">❓</span>
+          <span class="question-text">Как быстро приезжает группа реагирования?</span>
+          <span class="arrow">▶</span>
+        </button>
+        <div class="faq-answer">
+          <p>Среднее время прибытия — 10 минут. Всё зависит от расположения объекта и ситуации, но мы всегда гарантируем максимально оперативное реагирование.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  
+
+  <footer>
+    &copy; 2025 Охранное агентство "Кобра"
+  </footer>
+
+</body>
+</html>
