@@ -7,7 +7,7 @@ body {
 
     header {
       background-color: #1f2937;
-      padding: 1,25rem;
+      padding: 1.25rem;
       text-align: center;
     }
 
@@ -19,13 +19,13 @@ body {
 
     .hero {
       background: url('https://i.ibb.co/xKkjV60G/5233254540659259167.jpg') center/cover no-repeat;
-      padding: 6,25rem 1,25rem;
+      padding: 6.25rem 1.25rem;
       text-align: center;
     }
 
     .hero h2 {
       font-size: 2em;
-      margin-bottom: 0,625rem;
+      margin-bottom: 0.625rem;
       color: #fff;
     }
 
@@ -35,30 +35,30 @@ body {
     }
 
     .services {
-      padding: 2,5rem 1.25rem;
-      max-width: 56,25rem;
+      padding: 2.5rem 1.25rem;
+      max-width: 56.25rem;
       margin: auto;
     }
 
     .services h3 {
       color: #20c997;
       text-align: center;
-      margin-bottom: 1,875rem;
+      margin-bottom: 1.875rem;
     }
 
     .services ul {
       list-style: none;
       padding: 0;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(15,625rem, 1fr));
-      gap: 1,25rem;
+      grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+      gap: 1.25rem;
     }
 
     .services li {
       background: #1f2937;
-      padding: 1,25rem;
-      border-radius: 0,625rem;
-      border: 0,0625rem solid #333;
+      padding: 1.25rem;
+      border-radius: 0.625rem;
+      border: 0.0625rem solid #333;
       cursor: pointer;
       transition: background 0.3s;
     }
@@ -71,14 +71,14 @@ body {
 
     .cta {
       text-align: center;
-      margin: 2,5rem 0;
+      margin: 2.5rem 0;
     }
 
     .cta button {
-      padding: 0,625rem 1.25rem;
+      padding: 0.625rem 1.25rem;
       background-color: #20c997;
       border: none;
-      border-radius: 0,3125rem;
+      border-radius: 0.3125rem;
       color: white;
       font-size: 1em;
       cursor: pointer;
@@ -209,7 +209,7 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
-  text-shadow: 0,0625rem 0,0625rem 0,1875rem #000;
+  text-shadow: 0.0625rem 0.0625rem 0.1875rem #000;
   z-index: 2;
 }
 
@@ -230,17 +230,17 @@ body {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 0,9375rem;
+  gap: 0.9375rem;
   justify-content: center;
-  margin-top: 1,25rem;
+  margin-top: 1.25rem;
 }
 
 .gallery img {
-  width: 15,625rem;
-  height: 11,25rem;
+  width: 15.625rem;
+  height: 11.25rem;
   object-fit: cover;
-  border-radius: 0,625rem;
-  box-shadow: 0 0 0,625rem rgba(0,0,0,0.4);
+  border-radius: 0.625rem;
+  box-shadow: 0 0 0.625rem rgba(0,0,0,0.4);
 }
 
 @media (max-width: 48rem) {
@@ -255,7 +255,7 @@ body {
   }
 
   .navbar a {
-    margin: 0,5rem 0;
+    margin: 0.5rem 0;
     width: 90%;
     text-align: center;
   }
@@ -270,7 +270,7 @@ body {
 
   .about .container,
   .services {
-    padding: 1,25rem 0,625rem;
+    padding: 1.25rem 0.625rem;
   }
 
   .about-list li {
@@ -297,7 +297,7 @@ body {
 }
 
 .achievements {
-  padding: 2,5rem 1,25rem;
+  padding: 2.5rem 1.25rem;
   background-color: #161b22;
   color: #eee;
 }
@@ -305,22 +305,22 @@ body {
 .achievements h2 {
   text-align: center;
   color: #20c997;
-  margin-bottom: 1,25rem;
+  margin-bottom: 1.25rem;
 }
 
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 1,25rem;
+  gap: 1.25rem;
   justify-content: center;
 }
 
 .gallery img {
-  width: 15,625rem;
+  width: 15.625rem;
   height: auto;
   cursor: pointer;
-  border-radius: 0,625rem;
-  box-shadow: 0 0 0,625rem rgba(0,0,0,0.4);
+  border-radius: 0.625rem;
+  box-shadow: 0 0 0.625rem rgba(0,0,0,0.4);
   transition: transform 0.3s;
 }
 
@@ -330,14 +330,14 @@ body {
 
 .pdf-thumbnail {
   background-color: #1f2937;
-  padding: 1,25rem;
-  border-radius: 0,625rem;
-  border: 0,0625rem solid #333;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  border: 0.0625rem solid #333;
   color: #eee;
   text-align: center;
-  width: 15,625rem;
+  width: 15.625rem;
   cursor: pointer;
-  box-shadow: 0 0 0,625rem rgba(0,0,0,0.4);
+  box-shadow: 0 0 0.625rem rgba(0,0,0,0.4);
   transition: background-color 0.3s;
 }
 
@@ -361,12 +361,12 @@ body {
 
 .modal-content {
   margin: 5% auto;
-  padding: 0,625rem;
+  padding: 0.625rem;
   max-width: 90%;
   max-height: 85vh;
   background-color: #fff;
   color: #000;
-  border-radius: 0,625rem;
+  border-radius: 0.625rem;
   text-align: center;
   overflow: auto;
 }
@@ -378,10 +378,10 @@ body {
 
 .modal .close {
   position: absolute;
-  top: 1,25rem;
-  right: 1,875rem;
+  top: 1.25rem;
+  right: 1.875rem;
   color: #fff;
-  font-size: 2,5rem;
+  font-size: 2.5rem;
   font-weight: bold;
   cursor: pointer;
 }
@@ -405,10 +405,10 @@ body {
   position: relative;
   width: 100%;
   max-width: 75rem;
-  height: 18,75rem;
-  margin: 1,875rem auto;
+  height: 18.75rem;
+  margin: 1.875rem auto;
   overflow: hidden;
-  border-radius: 0,625rem;
+  border-radius: 0.625rem;
   background: #111; /* общий фон */
   display: flex;
   align-items: center;
@@ -431,10 +431,10 @@ body {
   max-width: 80%;
   max-height: 80%;
   object-fit: contain; /* сохраняем пропорции */
-  padding: 0,625rem;
+  padding: 0.625rem;
   background: #fff; /* фон под логотип */
-  border-radius: 0,5rem;
-  box-shadow: 0 0 0,625rem rgba(0,0,0,0.5);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.625rem rgba(0,0,0,0.5);
 }
 
 /* Адаптивность */
@@ -452,7 +452,7 @@ body {
   overflow: hidden;
   width: 100%;
   background: #111;
-  padding: 1,25rem 0;
+  padding: 1.25rem 0;
 }
 
 .partners-track {
@@ -463,14 +463,14 @@ body {
 
 .partner {
   flex: 0 0 auto;
-  width: 15,625rem;
-  height: 11,25rem;
+  width: 15.625rem;
+  height: 11.25rem;
   background: #fff;
   border-radius: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 0,5rem rgba(0,0,0,0.4);
+  box-shadow: 0 0 0.5rem rgba(0,0,0,0.4);
 }
 
 .partner img {
@@ -481,8 +481,8 @@ body {
 
 @media (max-width: 48rem) {
   .partner {
-    width: 11,25rem;
-    height: 8,125rem;
+    width: 11.25rem;
+    height: 8.125rem;
   }
 }
 
@@ -494,7 +494,7 @@ body {
 
 
 .contacts {
-  padding: 2,5rem 1,25rem;
+  padding: 2.5rem 1.25rem;
   background: #161b22;
   color: #eee;
 }
@@ -502,14 +502,14 @@ body {
 .contacts h2 {
   text-align: center;
   color: #20c997;
-  margin-bottom: 1,875rem;
+  margin-bottom: 1.875rem;
 }
 
 .contacts-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1,875rem;
-  margin-bottom: 1,875rem;
+  gap: 1.875rem;
+  margin-bottom: 1.875rem;
 }
 
 .contact-info p, 
@@ -531,13 +531,13 @@ body {
 .contact-form form {
   display: flex;
   flex-direction: column;
-  gap: 0,9375rem;
+  gap: 0.9375rem;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 0,625rem;
+  padding: 0.625rem;
   border: 0,0625rem solid #444;
   border-radius: 0,375rem;
   background: #222;
@@ -568,12 +568,12 @@ body {
 
 .order-btn {
   display: inline-block;
-  margin-top: 0,9375rem;
-  padding: 0,625rem 1,25rem;
+  margin-top: 0.9375rem;
+  padding: 0.625rem 1.25rem;
   background: #20c997;
   color: #000;
   text-decoration: none;
-  border-radius: 0,375rem;
+  border-radius: 0.375rem;
   font-weight: bold;
   transition: 0.3s;
 }
@@ -586,10 +586,10 @@ body {
 .section-header {
   display: flex;
   align-items: center;
-  gap: 1,5rem;
+  gap: 1.5rem;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 1,25rem 0 0,625rem;
+  margin: 1.25rem 0 0.625rem;
 }
 
 .section-title {
@@ -606,21 +606,21 @@ body {
   transition: transform .2s ease, opacity .2s ease;
 }
 
-.section-link:hover { transform: translateY(-0,0625rem); opacity: .9; }
+.section-link:hover { transform: translateY(-0.0625rem); opacity: .9; }
 
 .about-content {
   color: #ddd;
   line-height: 1.6;
-  max-width: 56,25rem;
+  max-width: 56.25rem;
 }
 
 .testimonials {
-  padding: 1,875rem 0 0,625rem;
+  padding: 1.875rem 0 0.625rem;
 }
 
 .testimonials-grid {
   display: grid;
-  gap: 1,125rem;
+  gap: 1.125rem;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
@@ -634,22 +634,22 @@ body {
 
 .t-card {
   background: #1f2937;
-  border: 0,0625rem solid #2a3443;
-  border-radius: 0,875rem;
+  border: 0.0625rem solid #2a3443;
+  border-radius: 0.875rem;
   padding: 1rem;
   color: #e6e6e6;
-  box-shadow: 0 0,375rem 1,125rem rgba(0,0,0,.25);
+  box-shadow: 0 0.375rem 1.125rem rgba(0,0,0,.25);
 }
 
 .t-header {
   display: flex;
   align-items: center;
-  gap: 0,75rem;
-  margin-bottom: 0,5rem;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .t-avatar {
-  width: 2,75rem; height: 2,75rem;
+  width: 2.75rem; height: 2.75rem;
   border-radius: 50%;
   background: #20c997;
   color: #000;
@@ -659,12 +659,12 @@ body {
 }
 
 .t-name { font-weight: 700; }
-.t-meta { font-size: 0,75rem; opacity: .75; }
+.t-meta { font-size: 0.75rem; opacity: .75; }
 
 .t-stars {
   color: #ffd166; /* звёзды */
-  letter-spacing: 0,125rem;
-  margin-bottom: 0,5rem;
+  letter-spacing: 0.125rem;
+  margin-bottom: 0.5rem;
 }
 
 .t-text {
@@ -676,17 +676,17 @@ body {
 .t-text::before {
   content: "“";
   color: #20c997;
-  font-size: 1,75rem;
+  font-size: 1.75rem;
   font-weight: 900;
-  margin-right: 0,375rem;
+  margin-right: 0.375rem;
 }
 
 /* Общие секции */
 .section-title {
   color: #20c997;
   text-align: center;
-  margin-bottom: 1,5625rem;
-  font-size: clamp(1,375rem, 2.6vw, 2rem);
+  margin-bottom: 1.5625rem;
+  font-size: clamp(1.375rem, 2.6vw, 2rem);
 }
 
 /* Преимущества */
