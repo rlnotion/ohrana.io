@@ -976,7 +976,7 @@ body {
   }
 
   .navbar ul li a {
-    font-size: 0.9rem; /* ещё меньше на телефоне */
-    padding: 0.4rem 0.8rem;
+    font-size: 0.4rem; /* ещё меньше на телефоне */
+    padding: 0.2rem 0.4rem;
   }
 }
