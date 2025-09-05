@@ -969,13 +969,13 @@ body {
 }
 
 @media (max-width: 768px) {
-  nav ul {
+  .navbar ul {
     flex-direction: column; /* пункты в колонку */
     align-items: center;
     gap: 0.5rem;
   }
 
-  nav ul li a {
+  .navbar ul li a {
     font-size: 0.9rem; /* ещё меньше на телефоне */
     padding: 0.4rem 0.8rem;
   }
