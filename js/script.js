@@ -136,18 +136,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll(".gallery-item").forEach(img => {
     img.addEventListener("click", () => {
-      modal.style.display = "block";
+      modal.classList.add("show");
+      modal.style.display = "flex";
       modalImg.src = img.src;
     });
   });
 
   closeBtn.addEventListener("click", () => {
-    modal.style.display = "none";
+    modal.classList.remove("show");
+    setTimeout(() => { modal.style.display = "none"; }, 400);
   });
 
   modal.addEventListener("click", (e) => {
     if (e.target === modal) {
-      modal.style.display = "none";
+      modal.classList.remove("show");
+      setTimeout(() => { modal.style.display = "none"; }, 400);
     }
   });
+});
+
+
+window.addEventListener('load', function() {
+  const preloader = document.querySelector('.preloader');
+  if (preloader) {
+    preloader.style.display = 'none';
+  }
 });
