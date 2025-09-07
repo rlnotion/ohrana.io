@@ -3,6 +3,7 @@ body {
       font-family: 'Times New Roman', Times, serif, sans-serif;
       background-color: #0d1117;
       color: #ffffff;
+      overflow-x: hidden;
     }
 
     header {
@@ -732,8 +733,14 @@ body {
 /* Карточки услуг */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 48rem) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .services-gride {
@@ -914,32 +921,29 @@ body {
 }
 
 .gallery-grid {
-  display: flex;
-  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 1rem;
-}
-
-@media (max-width: 768px) {
-    .gallery-item {
-      flex: 1 1 100%; /* На мобильных — один элемент в строку */
-    }
-}
-
-@media (max-width: 1024px) {
-    .gallery-item {
-      flex: 1 1 calc(50% - 1rem); /* Два элемента в ряд */
-      max-width: calc(50% - 1rem);
-  }
 }
 
 .gallery-item {
   width: 100%;
-  height: 12.5rem;
-  object-fit: cover; /* чтобы не растягивались */
+  height: 12rem;
+  object-fit: cover;
   border-radius: 0.625rem;
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
 }
+
+@media (max-width: 48rem) {
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+  .gallery-item {
+    height: 9rem;
+  }
+}
+
 
 .gallery-item:hover {
   transform: scale(1.05);
