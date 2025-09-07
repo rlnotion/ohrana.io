@@ -922,12 +922,14 @@ body {
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* базово */
+  justify-items: center;
 }
 
 .gallery-item {
   width: 100%;
+  max-width: 350px;  /* ограничим, чтобы не растягивались */
   height: 12rem;
   object-fit: cover;
   border-radius: 0.625rem;
@@ -935,19 +937,34 @@ body {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-@media (max-width: 48rem) {
-  .gallery-grid {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  }
-  .gallery-item {
-    height: 9rem;
-  }
-}
-
-
 .gallery-item:hover {
   transform: scale(1.05);
   box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.4);
+}
+
+/* 📱 Телефон: 1 колонка */
+@media (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  .gallery-item {
+    height: auto;
+    max-width: 90%;
+  }
+}
+
+/* 📲 Планшет: 2 колонки */
+@media (min-width: 601px) and (max-width: 1023px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 💻 ПК: 3 или больше колонок */
+@media (min-width: 1024px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* Модалка */
